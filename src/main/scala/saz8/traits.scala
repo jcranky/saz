@@ -1,3 +1,4 @@
+package saz8
 
 trait Logging {
   def writeLog(msg: String): Unit
@@ -23,6 +24,6 @@ trait FileLogger extends Logging {
 
 object SimpleFileLogger extends SystemLogger with SimpleFormatLogger
 
-SimpleFileLogger.log("olá mundo dos traits")
-
-
+object Traits extends App {
+  SimpleFileLogger.log("olá mundo dos traits")
+}
